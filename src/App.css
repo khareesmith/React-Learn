@@ -6,15 +6,28 @@ body {
   background-color: #ef476f;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+div:nth-child(1), div:nth-child(2), div:nth-child(3) {
+  padding-bottom: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+hr {
+  width: 6rem;
+}
+
+.nomarge {
+  margin: 0;
+  text-align: center;
+}
+
+.marge-bottom {
+  margin-bottom: 1em;
+}
+
+.unstyle {
+  list-style: none;
+  line-height: 1.2em;
+  text-align: center;
+  justify-content: center;
 }
 
 .clear-btn {
@@ -60,13 +73,24 @@ body {
 .container {
   border: solid 2px #073b4c;
   background: #118ab2;
-  height: 30rem;
   border-radius: 1em;
-  width: 60%;
-  margin: 3em auto;
-  right: 2rem;
   box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
+}
+
+.img {
+  display: table-cell;
+  vertical-align: middle;
+  float: left;
+  width: 150px;
+  height: 150px;
+  border-radius: 50px;
+  border: solid 1px black;
+}
+
+.container ul li {
+  max-width: 100%;
+  width: 95%;
 }
 
 @keyframes App-logo-spin {
